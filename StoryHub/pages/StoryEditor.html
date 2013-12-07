@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Story Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="../font-awesome-4.0.3/css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+	  .vote-number {
+		color: #9eea9d
+	  }
+	  .vote-number-neg {
+		color: #ee4a5d
+	  }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../bootstrap/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">StoryHub</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Captain Awesome</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        
+        <div class="span9">
+          
+          <div class="row-fluid">
+            <div class="span8">
+			<i class="fa fa-check fa-3x" style="color:green"></i>
+			This is a revisable section of your story. There is a green check mark next to this section
+			because it has been accepted as part of this revision tree. Any new revisions you add will
+			include this section as part of your story, and future revisions based on your revision will
+			also use this selected revison. Clicking on the green checkmark will switch it to a <i class="fa fa-exclamation" style="color:red"></i>
+			indicating that you don't want to include this revison at all. If you want to do that it's a
+			better idea to select from one of the listed revisons to the right or write your own revison
+			for the higher tiered sections first.
+            </div><!--/span-->
+          </div><!--/row-->
+			<div class="span8">
+			<p><i class="fa fa-exclamation fa-3x" style="color:red"></i>
+			This section is nested inside another section, suggesting you only want to edit this
+			segment and not the whole section.</p>
+			
+			<p>This is a section that you've marked as rejected. Maybe you plan on revising this section
+			or you think that what was written here really has nothing to do with the story and shouldn't
+			be included in future drafts. Either way it won't be included as part of your future revison
+			tree.</p>
+			</div>
+		   <div class="row-fluid">
+            <div class="span8" style="box-shadow: 0 0 10px blue;">
+			<div style="padding:3px"><i class="fa fa-check fa-3x" style="color:green" ></i>
+			This is the section that you're editing. It's highlighted in a lovely blue color.
+			<p style="background:#9ecaed">The text that caused this revision is also highlighted for 
+			convenience in comparison.</p> The difference between your revision and this current segement
+			will be what is highlighted for anyone editing the revision you create. If you want your edit
+			to be based on someone else's revision just select that from the revisions bar on the right.</div>
+			</div>
+		   </div>
+        </div><!--/span-->
+		<div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Revisions</li>
+              <li><a href="#"><span class="vote-number">16 </span>This is a snippet of another user's revison...</a></li>
+              <li><a href="#"><span class="vote-number">8 </span>The number next to me is  my vote count...</a></li>
+			  <li><a href="#"><span class="vote-number">7 </span>Higher numbers a green and good...</a></li>
+			  <li><a href="#"><span class="vote-number">5 </span>Negative numbers are red and bad...</a></li>
+              <li><a href="#"><span class="vote-number">4 </span>Hey, I think it's too obvious that we're using bootstrap...</a></li>
+              <li><a href="#"><span class="vote-number">4 </span>And suddenly the author died...</a></li>
+              <li><a href="#"><span class="vote-number">0 </span>"random dialog about equine critters who..."</a></li>
+              <li><a href="#"><span class="vote-number-neg">-1 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-2 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-2 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-2 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-3 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-4 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-4 </span>"bacon"</a></li>
+              <li><a href="#"><span class="vote-number-neg">-16 </span>"spam"</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Team Awesome 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap-transition.js"></script>
+    <script src="../bootstrap/js/bootstrap-alert.js"></script>
+    <script src="../bootstrap/js/bootstrap-modal.js"></script>
+    <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="../bootstrap/js/bootstrap-tab.js"></script>
+    <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="../bootstrap/js/bootstrap-popover.js"></script>
+    <script src="../bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
