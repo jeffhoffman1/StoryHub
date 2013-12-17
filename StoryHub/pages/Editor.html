@@ -1,12 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="en" ngApp="stickyApp">
+<html lang="en" ng-app="stickyApp">
   <head>
     <meta charset="utf-8">
     <title>Story Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <script src="../angular.min.js"></script>
+    <script src="EditorController.js"></script>
     
     <!-- Le styles -->
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -24,6 +27,25 @@
 	  }
 	  .vote-number-neg {
 		color: #ee4a5d
+	  }
+	  
+	  .sticky-note {
+		  margin-left: auto;
+		  margin-right: auto;
+		  background-color: rgb(240,240,20);
+		  box-shadow: 0 0 10px black;
+		  width: 100px;
+		  height: 60px;
+		  text-align: center;
+		  padding-top: 40px;
+		  font-weight: bold;
+	  }
+	  .sticky-note:hover {
+		cursor: pointer;
+	  }
+	  
+	  .selected {
+		box-shadow: 0 0 10px blue;
 	  }
 
       @media (max-width: 980px) {
@@ -74,16 +96,18 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid">
+	
+	<div class="container-fluid">
       <div class="row-fluid">
         
         <div class="span6">
           
 			<div class="row-fluid">
-				<div ng-repeat="paragraph in currentRevisionTree" ng-attr-style="{{paragraph.selected && box-shadow: 0 0 10px blue}}">
-					<i class="fa fa-3x {{paragraph.accepted && fa-check}}{{paragraph.rejected && fa-exclamation}}" ng-attr-style="{{paragraph.accepted && color:green || color:red}}"></i>
-					{{paragraph.text}}
+				<div ng-repeat="paragraph in currentRevisionTree.revisions" ng-click="setSelected($index)" ng-class="{selected: paragraph.selected}">
+					<div >
+						<i class="fa fa-3x"></i>
+						{{paragraph.text}}
+					</div>
 				</div><!--/span-->
           
 			</div>
@@ -98,13 +122,17 @@
 			</div>
         </div><!--/span-->
 		<div class="span3">
-			<div class="sticky-note" ng-hide="editMode">
-				<p ng-click="editMode = true">Edit Story</p>
+			<div class="sticky-note" ng-hide="editMode" ng-click="editMode = true">
+				<p>Edit Story</p>
 			</div>
 			<div ng-show="editMode">
-				<input type="radio" name="mode" ng-model="mode.add" value="true">Add paragraph
-				<input type="radio" name="mode" ng-model="mode.edit" value="true">Edit paragraph
-				<input type="radio" name="mode" ng-model="mode.delete" value="true">Remove paragraph
+				<input type="radio" name="mode" ng-model="mode" value="add">Add paragraph<br/>
+				<input type="radio" name="mode" ng-model="mode" value="edit">Edit paragraph<br/>
+				<input type="radio" name="mode" ng-model="mode" value="delete">Remove paragraph
+			</div>
+			<div ng-show="editMode && (mode == 'add' || mode == 'edit')">
+				<textarea style="width:100%;height:100%" ng-model="newText"></textarea>
+				<button ng-click="applyChanges()">Add to Story</button>
 			</div>
 		</div>
 		<div class="span3">
@@ -128,8 +156,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../angular.min.js"></script>
-    <script src="EditorController.js"></script>
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap-transition.js"></script>
     <script src="../bootstrap/js/bootstrap-alert.js"></script>
