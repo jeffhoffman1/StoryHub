@@ -13,6 +13,7 @@ app.use(app.router);
 
 var path = require('path');
 var __dir = "/home/ec2-user/StoryHub/StoryHub/";
+var __bootstrapdir = "/home/ec2-user/StoryHub/StoryHub/";
 
 var MONGOHQ_URL="mongodb://jeffhoffman1:a1234567@dharma.mongohq.com:10061/storyhub";
 var test, mongoose, _;
@@ -147,13 +148,13 @@ app.get('/user',function(req,res){
 
 app.get('/revisions',function(req,res){
 	var model = mongoose.model('revisions',RevisionSchema);
-	var ret = model.find(function(err,docs){
+	var ret = {};
+	model.find(function(err,docs){
 		if(err){
-			return err;
+			res.send(err);
 		}
-		return docs;
+		res.send(docs);
 	});
-	res.send(ret);
 });
 
 app.get('/revisionTree',function(req,res){
@@ -170,28 +171,25 @@ app.post('/revision',function(req,res){
 	var model = mongoose.model('revisions',RevisionSchema);
 	var bod = req.body;
 	var rev = new model();
-	rev.Text = bod.text;
-	rev.Type = bod.type;
-	console.log("REV::",rev);
+	console.log("BOD:",bod);
+	rev.Text = bod.obj.text;
+	rev.Type = bod.obj.type;
 	var ret = rev.save();
 	return ret;
 });
 
-app.get('/', function(req, res){
-	console.log("URL:",req.url);
-	res.send("Hello World");
-});
-
 app.use(function(req, res, next){
-	console.log("URL:",req.url);
 	var p = __dir + 'pages' + req.url;
 	if(path.existsSync(p)){
 		res.sendfile(p);
 	}
 	else{
 		var d = __dir.substring(0,__dir.length - 1);
-	//	res.sendfile(d + req.url);
-		res.send("don't worry about it");
+		if(path.existsSync(d + req.url)){
+			res.sendfile(d + req.url);
+		}
+		else
+			res.send("don't worry about it");
 	}
 });
 

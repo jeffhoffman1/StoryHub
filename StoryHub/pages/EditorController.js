@@ -21,6 +21,14 @@ stickyApp.controller("EditorController", ["$scope", "$http", function ($scope,$h
 	});
 	$http.get("/revisions").success(function(data, status, headers, config) {
 		$scope.revisions = data;
+		console.log("data",data);
+		for(d in data){
+			var paragraph = {"text" : data[d].Text};
+			console.log(paragraph);
+			$scope.added.push(paragraph);
+			$scope.currentRevisionTree.revisions.splice($scope.selectedIndex + 1, 0, paragraph);
+			$scope.setSelected($scope.selectedIndex + 1);
+		}
 	});
 	$http.get("/revisionTree").success(function(data, status, headers, config) {
 		$scope.currentRevisionTree = data;
