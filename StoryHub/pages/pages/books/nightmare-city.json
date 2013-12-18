@@ -1,0 +1,15 @@
+{
+    "id": "nightmare-city", 
+    "imageUrl":"img/books/nightmare-city.jpg",
+	"name": "Nightmare City",
+    "description":"Tom Harding only wants the truth. But the truth is becoming more dangerous with every passing minute.As a reporter for his high school newspaper, Tom Harding was tracking the best story of his life—when, suddenly, his life turned very, very weird. He woke up one morning to find his house empty . . . his street empty . . . his whole town empty . . . empty except for an eerie, creeping fog—and whatever creatures were slowly moving toward him through the fog.",
+	"author": "Andrew Klavan",
+    "contributors":[
+            "Tommy Lee", 
+            "Rebbeca James", 
+            "Tom White"
+    ], 
+    
+	"rating": 4	
+    
+}

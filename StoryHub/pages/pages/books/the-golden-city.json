@@ -1,0 +1,15 @@
+{
+    "id": "the-golden-city", 
+    "imageUrl": "img/books/the-golden-city.jpg",
+	"name": "The Golden City",
+    "description":"For two years, Oriana Paredes has been a spy among the social elite of the Golden City, reporting back to her people, the sereia, sea folk banned from the city's shores.",
+	"author": "J. Kathleen Cheney",
+    "contributors":[
+            "Judith Jones", 
+            "Mark Hill", 
+            "Molly Chapman"
+    ], 
+    
+	"rating": 4	
+    
+}

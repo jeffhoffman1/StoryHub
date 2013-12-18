@@ -1,0 +1,381 @@
+[  
+   {
+      "genre":"Horror",
+      "books": [
+					{
+					   "id": "the-walking-dead", 
+					   "imageUrl": "img/books/the-walking-dead.jpg", 
+					   "name": "The Walking Dead",
+					   "description":""
+					},
+					{
+					    "id": "fiddlehead", 
+						"imageUrl":"img/books/fiddlehead.jpg",
+						"name": "Fiddlehead",
+					    "description":"" 
+					},
+					{
+					    "id": "the-waiting", 
+						"imageUrl":"img/books/the-waiting.jpg",
+						"name": "The Waiting",
+					    "description":""
+					},
+				
+					{
+					   "id": "nightmare-city", 
+					   "imageUrl":"img/books/nightmare-city.jpg",
+					   "name": "Nightmare City",
+					   "description":""
+					},
+					{
+					   "id": "watcher-of-the-dark", 
+					   "imageUrl": "img/books/watcher-of-the-dark.jpg",
+					   "name": "Watcher of the Dark",
+					   "description":""
+					},
+					{
+					   "id": "alive", 
+					   "imageUrl":"img/books/alive.jpg",
+					   "name": "Alive",
+					   "description":""
+					},
+					{
+					   "id": "desecration", 
+						"imageUrl": "img/books/desecration.jpg",
+						"name": "Desecration", 
+					   "description":""
+					},
+					{
+					   "id": "lurker", 
+                       "imageUrl":"img/books/lurker.jpg",
+	                   "name": "Lurker",
+					   "description":""
+					},
+					{
+					   "id": "the-world-without-a-future", 
+					   "imageUrl": "img/books/the-world-without-a-future.jpg",
+	                   "name": "The World Without a Future",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+					   "imageUrl":"img/books/sticky-books-default.jpg",
+	                   "name": "Sticky Books Default",
+					   "description":""
+					}
+				]
+    },
+	{
+      "genre":"Mystery and Thrillers",
+      "books": [
+					{
+					   "id": "an-old-betrayal", 
+					   "imageUrl": "img/books/an-old-betrayal.jpg",
+					   "name": "An Old Betrayal",
+					   "description":""
+					},
+					{
+					   "id": "save-the-enemy", 
+						"imageUrl": "img/books/save-the-enemy.jpg",
+						"name": "Save the Enemy",
+					   "description":"" 
+					},
+					{
+					   "id": "the-absence-of-mercy", 
+						"imageUrl": "img/books/the-absence-of-mercy.jpg",
+						"name": "The Absence of Mercy: A Novel",
+					   "description":""
+					},
+				
+					{
+					   "id": "dust", 
+					   "imageUrl": "img/books/dust.jpg",
+					   "name": "Dust",
+					   "description":""
+					},
+					{
+					   "id": "the-golden-city", 
+					   "imageUrl": "img/books/the-golden-city.jpg",
+					   "name": "The Golden City",
+					   "description":""
+					},
+					{
+					   "id": "tooth-for-a-tooth", 
+						"imageUrl": "img/books/tooth-for-a-tooth.jpg",
+						"name": "Tooth for a Tooth", 
+					   "description":""
+					},
+					{
+					   "id": "the-good-boy", 
+						"imageUrl": "img/books/the-good-boy.jpg",
+						"name": "The Good Boy",
+					   "description":""
+					},
+					{
+					   "id": "morning-glory", 
+					   "imageUrl": "img/books/morning-glory.jpg",
+					   "name": "Morning Glory",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default", 
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default", 
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},  
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}
+				]
+    },
+	{
+      "genre":"Sci-Fy",
+      "books": [
+					{
+					   "id": "pawn", 
+						"imageUrl": "img/books/pawn.jpg",
+						"name": "Pawn",
+					   "description":""
+					},
+					{
+					   "id": "these-broken-stars", 
+						"imageUrl": "img/books/these-broken-stars.jpg",
+						"name": "These Broken Stars",
+					   "description":"" 
+					},
+					{
+					   "id": "after-eden", 
+						"imageUrl": "img/books/after-eden.jpg",
+						"name": "After Eden",
+					   "description":""
+					},
+				
+					{
+					   "id": "brooke", 
+						"imageUrl": "img/books/brooke.jpg",
+						"name": "Brooke",
+					   "description":""
+					},
+					{
+					   "id": "twinmaker", 
+						"imageUrl": "img/books/twinmaker.jpg",
+						"name": "Twinmaker",
+					   "description":""
+					},
+					{
+					   "id": "olivia-twisted", 
+						"imageUrl": "img/books/olivia-twisted.jpg",
+						"name": "Olivia Twisted", 
+					   "description":""
+					},
+					{
+					   "id": "chasing-the-star-garden", 
+						"imageUrl": "img/books/chasing-the-star-garden.jpg",
+						"name": "Chasing the Star Garden",
+					   "description":""
+					},
+					{
+					   "id": "the-living", 
+						"imageUrl": "img/books/the-living.jpg",
+						"name": "The Living",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default", 
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default", 
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default", 
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},  
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					},
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}, 
+					{
+					   "id": "sticky-books-default", 
+						"imageUrl":"img/books/sticky-books-default.jpg",
+						"name": "Sticky Books Default",
+					   "description":""
+					}
+				]
+    }
+	
+]	

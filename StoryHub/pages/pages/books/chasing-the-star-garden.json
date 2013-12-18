@@ -1,0 +1,15 @@
+{
+    "id": "chasing-the-star-garden", 
+    "imageUrl": "img/books/chasing-the-star-garden.jpg",
+	"name": "Chasing the Star Garden",
+    "description": "An opium-addicted beauty.An infamous poet living in self-imposed exile.An ancient treasure about to fall into the wrong hands.",
+	"author": "Melanie Karsak",
+    "contributors":[
+            "Melody Winters", 
+            "Carla Wright", 
+            "Joann White"
+    ], 
+    
+	"rating": 4	
+    
+}

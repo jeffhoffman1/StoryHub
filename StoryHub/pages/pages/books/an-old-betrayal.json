@@ -1,0 +1,15 @@
+{
+    "id": "an-old-betrayal", 
+    "imageUrl": "img/books/an-old-betrayal.jpg",
+	"name": "An Old Betrayal",
+    "description": "In the seventh book of Finch’s bestselling series of Victorian mysteries, a case of mistaken identity has Charles Lenox playing for his highest stakes yet: the safety of Queen Victoria herself.",
+	"author": "Charles Finch",
+    "contributors":[
+            "Jake Miller", 
+            "Jimmy Stewart", 
+            "Shelly Green"
+    ], 
+    
+	"rating": 4	
+    
+}

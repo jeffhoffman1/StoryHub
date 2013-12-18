@@ -1,0 +1,15 @@
+{
+    "id": "after-eden", 
+    "imageUrl": "img/books/after-eden.jpg",
+	"name": "After Eden",
+    "description": "Eden Anfield loves puzzles, so when mysterious new boy Ryan Westland shows up at her school she's hooked. On the face of it, he's a typical American teenager. So why doesn't he recognise pizza? And how come he hasn't heard of Hitler? What puzzles Eden the most, however, is the interest he's taking in her. ",
+	"author": "Helen",
+    "contributors":[
+            "Michael Englund", 
+            "Nate Anderson", 
+            "Kyle Michaels"
+    ], 
+    
+	"rating": 4	
+    
+}

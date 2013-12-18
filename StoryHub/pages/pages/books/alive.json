@@ -1,0 +1,14 @@
+{
+    "id": "alive", 
+    "imageUrl":"img/books/alive.jpg",
+	"name": "Alive",
+    "description":"Flesh-eating zombies, dirty sex, and a shattered past...What's more dangerous-the man who broke her heart or those trying to eat it?",
+	"author": "Megan D. Martin",
+    "contributors":[
+            "Amy Jackson", 
+            "Rebbeca James", 
+            "Cynthia White"
+    ], 
+    "rating": 4	
+    
+}

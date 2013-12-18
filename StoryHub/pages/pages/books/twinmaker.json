@@ -1,0 +1,15 @@
+{
+    "id": "twinmaker", 
+    "imageUrl": "img/books/twinmaker.jpg",
+	"name": "Twinmaker",
+    "description": "High-stakes action combines with issues of friendship and body image in this timely and thought-provoking exploration of the intersection of technology and identity.", 
+	"author": "Sean Williams",
+    "contributors":[
+            "Carl Cannon", 
+            "Kimmy Steep", 
+            "Charlie Coles"
+    ], 
+    
+	"rating": 4	
+    
+}

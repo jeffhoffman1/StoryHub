@@ -1,0 +1,15 @@
+{
+    "id": "watcher-of-the-dark", 
+    "imageUrl": "img/books/watcher-of-the-dark.jpg",
+	"name": "Watcher of the Dark",
+    "description": "New Orleans was nearly the death of Jeremiah Hunt, between a too-close brush with the FBI and a chilling, soul-searing journey through the realm of the dead that culminated with a do-or-die confrontation with Death himself.",
+	"author": "Joseph Nassise",
+    "contributors":[
+            "Ryan Miller", 
+            "Jimmy Stewart", 
+            "Tom White"
+    ], 
+    
+	"rating": 3	
+    
+}

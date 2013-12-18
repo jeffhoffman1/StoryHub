@@ -1,0 +1,15 @@
+{
+    "id": "these-broken-stars", 
+    "imageUrl": "img/books/these-broken-stars.jpg",
+	"name": "These Broken Stars",
+    "description": "It's a night like any other on board the Icarus. Then, catastrophe strikes: the massive luxury spaceliner is yanked out of hyperspace and plummets into the nearest planet. Lilac LaRoux and Tarver Merendsen survive. And they seem to be alone. ",
+	"author": "Amie Kaufman",
+    "contributors":[
+            "Carson Stevens", 
+            "Jan Thomas", 
+            "John Lyons"
+    ], 
+    
+	"rating": 4	
+    
+}

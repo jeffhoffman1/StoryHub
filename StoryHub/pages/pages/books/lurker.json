@@ -1,0 +1,14 @@
+{
+    "id": "lurker", 
+    "imageUrl":"img/books/lurker.jpg",
+	"name": "Lurker",
+    "description":"Meg and Harry have retreated to a remote cottage on the northeast coast of England to recuperate from the mental and physical stress of losing their baby. While exploring the ancient coastal landscape, Meg chances upon eighteenth-century quarry mines reclaimed by nature. But birds and butterflies aren't all she finds.",
+	"author": "Gary Fry",
+    "contributors":[
+            "Tommy Lee", 
+            "Rebbeca James", 
+            "Tom White"
+    ], 
+    "rating": 4	
+    
+}

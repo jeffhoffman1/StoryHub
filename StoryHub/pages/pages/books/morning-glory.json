@@ -1,0 +1,15 @@
+{
+    "id": "morning-glory", 
+    "imageUrl": "img/books/morning-glory.jpg",
+	"name": "Morning Glory",
+    "description": "New York Times bestselling author Sarah Jio imagines life on Boat Street, a floating community on Seattle’s Lake Union—home to people of artistic spirit who for decades protect the dark secret of one startling night in 1959", 
+	"author": " Sarah Jio",
+    "contributors":[
+            "Sam Waters", 
+            "Chelsea Turpinning", 
+            "Cliff Jones"
+    ], 
+    
+	"rating": 4	
+    
+}

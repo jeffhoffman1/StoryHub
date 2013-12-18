@@ -1,0 +1,15 @@
+{
+    "id": "brooke", 
+    "imageUrl": "img/books/brooke.jpg",
+	"name": "Brooke",
+    "description": "Set just before the events of Into the Still Blue, the conclusion to Veronica Rossi's Under the Never Sky trilogy, this breathtaking novella is a satisfying stand-alone for new readers as well as an exciting glimpse at favorite characters from the trilogy. Pulsing with romance and danger, Brooke will leave readers desperate for the conclusion to this epic and unforgettable saga.",
+	"author": "Veronica Rossi",
+    "contributors":[
+            "Roman Johnson", 
+            "Lorde Sanders", 
+            "Kyle Michaels"
+    ], 
+    
+	"rating": 4	
+    
+}

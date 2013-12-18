@@ -1,0 +1,15 @@
+{
+    "id": "save-the-enemy", 
+    "imageUrl": "img/books/save-the-enemy.jpg",
+	"name": "Save the Enemy",
+    "description": "Everything has been downhill since Zoey Trask's mother was murdered in a random mugging. Her younger brother, Ben, is on the autistic spectrum and needs constant supervision. It's senior year, and she's the new girl at a weird private school in Old Town Alexandria, VA, full of kids who seem too nice to be true-including a very cute boy named Pete.", 
+	"author": "Arin Greenwood",
+	"contributors":[
+            "Sam Jonas", 
+            "Kurt Lemons", 
+            "Howard Luis"
+    ], 
+    
+	"rating": 4	
+    
+}

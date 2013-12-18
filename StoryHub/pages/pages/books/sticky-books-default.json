@@ -1,0 +1,13 @@
+{
+    "id": "sticky-books-default", 
+    "imageUrl":"img/books/sticky-books-default.jpg",
+	"name": "Sticky Books Default",
+    "description":"Have a story? Have an idea? At sticky books you can not only read great books but you also can participate in writing them with a community of other fans! Come read, chat with other readers and throw your ideas up on the wall and see what sticks!",  
+	"author": "You",
+    "contributors":[
+            "Other Passionate Readers", 
+    ], 
+    
+	"rating": 5	
+    
+}

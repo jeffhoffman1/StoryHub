@@ -1,0 +1,13 @@
+<img ng-src="{{mainImageUrl}}" class="book">
+
+<h1>{{book.name}}</h1>
+<div star-rating rating-value="rating" max="5" readonly="true"></div>
+<p class="pborderbottom">
+	Original Author: {{book.author}}</br>
+	Top Contributors:<span>{{book.contributors.join(', ')}}</span>
+</p>
+
+<p>Book Description:</br>{{book.description}}</p>
+
+
+

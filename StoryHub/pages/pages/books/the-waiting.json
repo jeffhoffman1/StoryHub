@@ -1,0 +1,15 @@
+{
+    "id": "The Waiting", 
+    "imageUrl":"img/books/the-waiting.jpg",
+	"name": "The Waiting",
+    "description":"His life has been shattered by events beyond his control and regret is his constant companion. His wife is gone, lost to an unbeatable cancer. His son has been mentally and physically handicapped by a tragic accident. He’s been fired for using company funds in a failed attempt to save his wife’s life. ",
+	"author": " Joe Hart",
+    "contributors":[
+            "Jake Lee", 
+            "Rebbeca James", 
+            "Tom White"
+    ], 
+    
+	"rating": 4	
+    
+}

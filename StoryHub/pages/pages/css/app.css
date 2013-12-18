@@ -1,0 +1,341 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+@font-face{
+	font-family: rounded-font;src: url('VarelaRound-Regular.otf');
+}
+
+@font-face{
+	font-family: new-font;src: url('Station.ttf');
+}
+
+@font-face{
+	font-family: sketchy-font;src: url('sketchy.ttf');
+}
+
+@font-face{
+	font-family: sticky-font;src: url('earwig.ttf');
+}
+
+
+
+.genre-display{
+  padding-left: 40px;
+  font-weight: bold;
+  font-family:arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  
+
+}
+
+.boxed {
+  margin:auto 6px;
+  padding: 10px 14px 11px 14px;
+  display: inline-block;
+  background-color:#FD00E0;
+  color: black;
+    -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+   box-shadow:4px 4px 8px #1c1c1c;
+    -webkit-box-shadow:4px 4px 8px #1c1c1c;
+    -moz-box-shadow:4px 4px 8px #1c1c1c;
+    -o-box-shadow:4px 4px 8px #1c1c1c
+}
+
+.boxed2 {
+  margin:auto 5px;
+  padding: 10px 14px 10px 14px;
+  display: inline-block;
+  background-color:#F8F808;
+  color: black;
+    -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+   box-shadow:4px 4px 8px #1c1c1c;
+   -webkit-box-shadow:4px 4px 8px #1c1c1c;
+   -moz-box-shadow:4px 4px 8px #1c1c1c;
+   -o-box-shadow:4px 4px 8px #1c1c1c
+ 
+}
+
+.boxed3 {
+  margin: 0px 7px 0px 2px;
+  padding: 10px 19px 11px 19px;
+  display: inline-block;
+  background-color:#F8F808;
+  color: black;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+   box-shadow:4px 4px 8px #1c1c1c;
+   -webkit-box-shadow:4px 4px 8px #1c1c1c;
+   -moz-box-shadow:4px 4px 8px #1c1c1c;
+   -o-box-shadow:4px 4px 8px #1c1c1c
+ 
+}
+
+.logo{  
+   font-family:Dutch Florin;
+   color: white;
+   
+}
+
+.slogancontainer{
+	text-align:center;
+	padding-top:8%;
+}
+
+.slogan{
+	font-family:rounded-font,sans-serif;
+	font-size: 22px;
+	padding-bottom: 50px;
+    padding-top: 10px;
+	font-weight:bold;
+}
+
+#menu {
+  position: fixed;
+  top:50%;
+  display:inline-block;
+  height:10%;
+  width:100%;
+  margin: 60px auto 45px;
+  background-color:#5597b4;
+  box-shadow:0 1px 1px #ccc;
+  border-radius:2px;
+  margin-top: -2em;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* These rules are for scrollbar draggable panel */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid whiteSmoke 4px;
+	border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.panel {
+	min-height: 10em;
+	display: table-cell;
+	text-align:center;
+	vertical-align: middle;
+	float:left;
+	width:25%;
+	height:10%;
+	color:#fff !important;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:none !important;
+	line-height:1;
+	text-transform: uppercase;
+	background-color:transparent;
+	-webkit-transition:background-color 0.25s;
+	-moz-transition:background-color 0.25s;
+	transition:background-color 0.25s;
+}
+
+#signIn
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.books {
+  list-style: none;
+  padding-bottom:8%;
+}
+
+.thumb {
+  float: left;
+  margin: -1em 1em 1.5em 0em;
+  height: 100px;
+  width: 100px;
+}
+
+.photos {
+	
+}
+
+.photos ul {
+  list-style: none;
+  white-space:nowrap;
+  overflow-x:scroll;
+  padding-bottom:25px;
+}
+
+.photos ul li {
+    max-width:200px;
+	background: #fff;
+	display: inline-block;
+	list-style: none;
+  	margin: 0 10px 10px 0;
+  	vertical-align: top;
+	padding: 0;
+  	text-align:center; 
+    color: #000;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
+	margin-top: 0;
+}
+
+.photos ul li:hover {
+	border: 6px solid #e1d9ec;
+	border-style:double;
+}
+
+.photos ul li:hover a{
+	opacity: 1.0;
+	white-space:normal;
+	overflow:visible;
+    
+}
+
+.photos ul li:hover a img{
+	
+}
+
+
+.photos ul li a {
+  display: block;
+  margin-bottom: 2px; 
+  opacity: 0.75;
+  font-family: Verdana;
+  font-size: 11px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.photos ul li a:hover {
+  opacity: 1.0;
+  overflow:visible;
+  white-space: normal;
+}
+
+
+
+.books div {
+  clear: both;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+/** Detail View **/
+img.book {
+  float: left;
+  border: 1px solid black;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  background-color: white;
+  padding: 2em;
+  height: 400px;
+  width: 300px;
+}
+
+ul.book-thumbs {
+  margin: 0;
+  list-style: none;
+}
+
+ul.book-thumbs li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+ul.book-thumbs img {
+  height: 100px;
+  width: 100px;
+  padding: 1em;
+}
+
+ul.book-thumbs img:hover {
+  cursor: pointer;
+}
+
+
+ul.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li{
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.specs > li > span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.specs dt {
+  font-weight: bold;
+}
+
+p.pborderbottom{
+  border-bottom: 1px solid gray;
+ }
+ 
+ .scroller-holder ul{
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.clear{
+ clear:both;   
+}
+
+.rating{  
+     color: #a9a9a9;
+     margin: 0;
+     padding: 0;
+  }
+ul.rating {  display: inline-block;}
+.rating li {  
+     list-style-type: none;
+     display: inline-block;  
+     padding: 1px;
+     text-align: center;
+     font-weight: bold;
+     cursor: pointer;
+  }
+
+.rating .filled {  
+color: #FFD700;
+}
+
+
+

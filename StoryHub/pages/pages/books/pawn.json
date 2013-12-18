@@ -1,0 +1,15 @@
+{
+    "id": "pawn", 
+    "imageUrl": "img/books/pawn.jpg",
+	"name": "Pawn",
+    "description": "For Kitty Doe, it seems like an easy choice. She can either spend her life as a III in misery, looked down upon by the higher ranks and forced to leave the people she loves, or she can become a VII and join the most powerful family in the country. ",
+	"author": "Aimee Carter",
+    "contributors":[
+            "Kimbley Welsh", 
+            "Jan Thomas", 
+            "Cliff Jones"
+    ], 
+    
+	"rating": 4	
+    
+}

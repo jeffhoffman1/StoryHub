@@ -1,0 +1,15 @@
+{
+    "id": "desecration", 
+    "imageUrl": "img/books/desecration.jpg",
+	"name": "Desecration",
+    "description": "LONDON. When the body of a young heiress is found within the Royal College of Surgeons, Detective Sergeant Jamie Brooke is assigned to the case. An antique ivory figurine found beside the body is the only lead and she enlists Blake Daniel, a reluctant clairvoyant, to help her discover the message it holds.",
+	"author": " Joanna Penn",
+    "contributors":[
+            "Haley Johnnason", 
+            "Mitty Jackson", 
+            "Simon Dailey"
+    ], 
+    
+	"rating": 4	
+    
+}

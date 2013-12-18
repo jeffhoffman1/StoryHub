@@ -1,0 +1,15 @@
+{
+    "id": "dust", 
+    "imageUrl": "img/books/dust.jpg",
+	"name": "Dust",
+    "description": "Massachusetts Chief Medical Examiner Kay Scarpetta has just returned from working one of the worst mass murders in U.S. history when she’s awakened at an early hour by Detective Pete Marino.", 
+	"author": " Patricia Cornwell",
+    "contributors":[
+            "Johhny Simmons", 
+            "Jason Hall", 
+            "Molly Chapman"
+    ], 
+    
+	"rating": 3	
+    
+}

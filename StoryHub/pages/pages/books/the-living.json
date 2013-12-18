@@ -1,0 +1,15 @@
+{
+    "id": "the-living", 
+    "imageUrl": "img/books/the-living.jpg",
+	"name": "The Living",
+    "description": "Shy took the summer job to make some money. In a few months on a luxury cruise liner, he'll rake in the tips and be able to help his mom and sister out with the bills. And how bad can it be? Bikinis, free food, maybe even a girl or two—every cruise has different passengers, after all.",
+	"author": "Matt de la Pena ",
+    "contributors":[
+            "John Winters", 
+            "Matt Lewis", 
+            "Simon Dailey"
+    ], 
+    
+	"rating": 4	
+    
+}
