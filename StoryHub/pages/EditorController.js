@@ -50,6 +50,7 @@ stickyApp.controller("EditorController", ["$scope", "$http", function ($scope,$h
 			$scope.currentRevisionTree.revisions.splice($scope.selectedIndex, 1);
 		} else {
 			var paragraph = {text: $scope.newText, userID: $scope.user.id, revisionTreeID: $scope.currentRevisionTree.id, insertionIndex: $scope.selectedIndex};
+			var revision = {text:$scope.newText,userID: $scope.user.id, revisionBranchID:$scope.currentRevisionTree.id, type:"paragraph"}
 			$scope.newText = "";
 			if ($scope.mode == "add") {
 				$scope.added.push(paragraph);
@@ -57,9 +58,21 @@ stickyApp.controller("EditorController", ["$scope", "$http", function ($scope,$h
 				$scope.setSelected($scope.selectedIndex + 1);
 			} else if ($scope.mode == "edit") {
 				paragraph.revisionID = $scope.currentRevisionTree.revisions[$scope.selectedIndex].id;
+				revision.revisionID = paragraph.revisionID;
 				$scope.edited.push(paragraph);
 				$scope.currentRevisionTree.revisions[$scope.selectedIndex].text = paragraph.text;
 			} 
+			$http.post("/revision",{obj:revision});
 		}
+	}
+	
+	$scope.upvote = function() {
+		$scope.selected.upvotes++;
+		$http.post("/upvote", {revisionID: $scope.selected.revisionID, userID: $scope.user.id});
+	}
+	
+	$scope.downvote = function() {
+		$scope.selected.downvotes++;
+		$http.post("/downvote", {revisionID: $scope.selected.revisionID, userID: $scope.user.id});
 	}
 }]);

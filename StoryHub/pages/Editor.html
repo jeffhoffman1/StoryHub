@@ -111,12 +111,15 @@
 				</div><!--/span-->
           
 			</div>
-			<div ng-show="editMode">
-				<div class="span8"></div>
-				<div class="span1">
-					<button type="button" ng-click="editMode=false">Cancel</button>
+			
+			<div>
+				<div ng-show="selected.selected" class="span3">
+					<button type="button" ng-click="upvote()">Like</button>
+					<button type="button" ng-click="downvote()">Dislike</button>
 				</div>
-				<div class="span1">
+				<div class="span4"></div>
+				<div ng-show="editMode" class="span3">
+					<button type="button" ng-click="editMode=false">Cancel</button>
 					<button type="button" ng-click="saveEdits()">Save</button>
 				</div>
 			</div>

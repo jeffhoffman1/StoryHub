@@ -1,12 +1,22 @@
 var express = require('express');
 var app = express();
+var passport = require('passport');
+/** configure server **/
+app.use(express.bodyParser());
+app.use(express.cookieParser());
+app.use(express.session({ secret: 'keyboard cat' }));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(app.router);
+
+/** load up **/
+
 var path = require('path');
 var __dir = "/home/ec2-user/StoryHub/StoryHub/";
 
 var MONGOHQ_URL="mongodb://jeffhoffman1:a1234567@dharma.mongohq.com:10061/storyhub";
 var test, mongoose, _;
 
-var passport = require('passport');
 
 app.post('/login', passport.authenticate('local', 
 	{ successRedirect: '/',
@@ -30,14 +40,14 @@ var StorySchema = new Schema({
 });
 
 var RevisionSchema = new Schema({
-	RevisionID : String,
-	UserID	: String,
-	StoryID : String,
-	Type	: String,
-	RevisionBranchID : String,
-	Text	: String,
-	Upvotes	: Number,
-	Downvotes : Number
+	RevisionID : {type: String, default : "1"},
+	UserID	: {type: String, default : "1"},
+	StoryID : {type: String, default : "1"},
+	Type	: {type: String, default : "1"},
+	RevisionBranchID : {type: String, default : "1"},
+	Text	: {type: String, default : "1"},
+	Upvotes	: {type: Number, default : "1"},
+	Downvotes : {type: Number, default : "1"}
 });
 
 var RevisionBranchSchema = new Schema({
@@ -101,9 +111,8 @@ function find(name){
 	});
 }
 /**defining connections**/
-app.enable('trust proxy');
-app.use(express.bodyParser());
 
+app.enable('trust proxy');
 app.use('/', express.static('../pages'))
 app.use('/', express.static('..'));
 app.use('/', express.static('../bootstrap'));
@@ -138,6 +147,17 @@ app.get('/user',function(req,res){
 
 app.get('/revisions',function(req,res){
 	var model = mongoose.model('revisions',RevisionSchema);
+	var ret = model.find(function(err,docs){
+		if(err){
+			return err;
+		}
+		return docs;
+	});
+	res.send(ret);
+});
+
+app.get('/revisionTree',function(req,res){
+	var model = mongoose.model('revisionbranches',RevisionBranchSchema);
 	return model.find(function(err,docs){
 		if(err){
 			return err;
@@ -146,14 +166,15 @@ app.get('/revisions',function(req,res){
 	});
 });
 
-app.get('/revisionTree',function(req,res){
-	var model = mongoose.model('revisionbranch',RevisionBranchSchema);
-	return model.find(function(err,docs){
-		if(err){
-			return err;
-		}
-		return docs;
-	});
+app.post('/revision',function(req,res){
+	var model = mongoose.model('revisions',RevisionSchema);
+	var bod = req.body;
+	var rev = new model();
+	rev.Text = bod.text;
+	rev.Type = bod.type;
+	console.log("REV::",rev);
+	var ret = rev.save();
+	return ret;
 });
 
 app.get('/', function(req, res){
