@@ -20,7 +20,10 @@ body {
 	font-family: sticky-font;src: url('earwig.ttf');
 }
 
-
+.readButton{
+  float:left;
+  padding-left: 20px
+}
 
 .genre-display{
   padding-left: 40px;
