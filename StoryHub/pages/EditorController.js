@@ -1,6 +1,6 @@
 var stickyApp = angular.module('stickyApp', []);
  
-stickyApp.controller("EditorController", ["$scope", function ($scope) {
+stickyApp.controller("EditorController", ["$scope", "$http", function ($scope,$http) {
 	$scope.user = {};
 	$scope.user.name = "Captain Awesome";
 	$scope.revisions = {};
@@ -16,16 +16,14 @@ stickyApp.controller("EditorController", ["$scope", function ($scope) {
 	$scope.selectedIndex = -1;
 	
 	//Load the data needed for the editor page
-	$scope.$apply(function() {
-		$http.get("/user").success(function(data, status, headers, config) {
-			$scope.user = data;
-		});
-		$http.get("/revisions").success(function(data, status, headers, config) {
-			$scope.revisions = data;
-		});
-		$http.get("/revisionTree").success(function(data, status, headers, config) {
-			$scope.currentRevisionTree = data;
-		});
+	$http.get("/user").success(function(data, status, headers, config) {
+		$scope.user = data;
+	});
+	$http.get("/revisions").success(function(data, status, headers, config) {
+		$scope.revisions = data;
+	});
+	$http.get("/revisionTree").success(function(data, status, headers, config) {
+		$scope.currentRevisionTree = data;
 	});
 	
 	$scope.saveEdits = function() {
